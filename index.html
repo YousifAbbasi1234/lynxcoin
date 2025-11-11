@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0">
+    <title>LynxCoin - Climb for Treasure, Hold for Glory</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="./images/main-logo.png">
+</head>
+
+<body>
+    <div class="stars" id="stars"></div>
+
+    <nav>
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <img src="./images/main-logo.png" alt="LynxCoin Logo">
+                <span class="nav-logo-text">LYNXCOIN</span>
+            </a>
+
+            <ul class="nav-center" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#tokenomics">Tokenomics</a></li>
+                <li><a href="#howto">How To Buy</a></li>
+                <li><a href="#roadmap">Roadmap</a></li>
+                <li><a href="#faq">FAQ</a></li>
+            </ul>
+
+            <div class="nav-right">
+                <!-- <button class="wallet-connect-btn" id="walletConnectBtn">
+                    <span class="wallet-icon">👛</span>
+                    <span class="wallet-text">Connect Wallet</span>
+                </button> -->
+                <a href="https://x.com/LuckyLynxCoin" target="_blank" class="social-icon" title="X (Twitter)">𝕏</a>
+                <a href="https://t.me/+jswAxFa3J5RjMDkx" target="_blank" class="social-icon" title="Telegram">📱</a>
+            </div>
+
+            <button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-left">
+                    <div class="hero-content">
+                        <h1 class="hero-title">🗻 The Mystic Mountain Quest</h1>
+                        <p class="hero-subtitle">Climb for Treasure, Hold for Glory</p>
+                        <p class="hero-description">
+                            Join the legendary explorer Lynx on an epic journey to uncover The Lost Crypto Treasure.
+                            Ascend the blockchain's highest peaks with fellow Treasure Seekers in search of prosperity
+                            and
+                            glory.
+                        </p>
+
+                        <!-- <div class="hero-features">
+                            <div class="hero-feature">
+                                <span class="hero-feature-icon">✅</span>
+                                <span><strong>0% Buy & Sell Tax</strong> – Pure adventure, no fees</span>
+                            </div>
+                            <div class="hero-feature">
+                                <span class="hero-feature-icon">🔥</span>
+                                <span><strong>Community Driven</strong> – Rise together as Treasure Seekers</span>
+                            </div>
+                            <div class="hero-feature">
+                                <span class="hero-feature-icon">💎</span>
+                                <span><strong>Epic Rewards</strong> – Every holder climbs to glory</span>
+                            </div>
+                        </div> -->
+
+                        <div class="cta-buttons">
+                            <a href="https://t.me/+jswAxFa3J5RjMDkx" target="_blank" class="cta-btn cta-primary">Join
+                                Telegram</a>
+                            <a href="#about" class="cta-btn cta-secondary">Learn More</a>
+                        </div>
+                    </div>
+
+                    <!-- Progress Bar Section - Below Home Content -->
+                    <div class="progress-section">
+                        <!-- <div class="progress-container">
+                            <div class="progress-header">
+                                <div class="progress-title">🎯 Presale Progress</div>
+                                <div class="progress-stats">
+                                    <span id="raisedAmount">0</span> SOL / <span id="targetAmount">1000</span> SOL
+                                </div>
+                            </div>
+                            <div class="progress-bar-wrapper">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" id="progressFill"></div>
+                                    <div class="progress-text" id="progressText">0%</div>
+                                </div>
+                            </div>
+                            <div class="progress-details">
+                                <div class="progress-detail">
+                                    <span class="detail-label">💰 Total Raised:</span>
+                                    <span class="detail-value" id="totalRaisedUSD">$0</span>
+                                </div>
+                                <div class="progress-detail">
+                                    <span class="detail-label">🏆 Contributors:</span>
+                                    <span class="detail-value" id="contributorCount">0</span>
+                                </div>
+                            </div>
+                            <div class="wallet-info">
+                                <div class="wallet-address-display">
+                                    <span class="wallet-label">Presale Wallet:</span>
+                                    <div class="wallet-address-container">
+                                        <span class="wallet-address" id="displayWalletAddress">FD95zJz6dxKd4X2e4gSGqWHqeo8g1SYQfGHEH3hQaTrp</span>
+                                        <button class="copy-wallet-btn" id="copyWalletBtn" title="Copy Address">📋</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+
+                <div class="presale-widget">
+                    <!-- <h2 class="widget-title"><img src="./images/main-logo.png" alt=""> LYNX Presale</h2>
+
+                    <div class="countdown-container">
+                        <div class="countdown-title">Presale Ends In:</div>
+                        <div class="countdown">
+                            <div class="countdown-unit">
+                                <span class="countdown-value" id="days">00</span>
+                                <span class="countdown-label">Days</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-value" id="hours">00</span>
+                                <span class="countdown-label">Hours</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-value" id="minutes">00</span>
+                                <span class="countdown-label">Mins</span>
+                            </div>
+                            <div class="countdown-unit">
+                                <span class="countdown-value" id="seconds">00</span>
+                                <span class="countdown-label">Secs</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="currency-selection">
+                        <div class="currency-label">Select Currency:</div>
+                        <div class="currency-buttons">
+                            <button class="currency-btn active" data-currency="SOL">SOL</button>
+                            <button class="currency-btn" data-currency="USDT">USDT</button>
+                            <button class="currency-btn" data-currency="USDC">USDC</button>
+                        </div>
+                    </div>
+
+                    <div class="input-section">
+                        <div class="input-group">
+                            <label class="input-label">You Pay:</label>
+                            <div class="input-container">
+                                <input type="number" class="input-field" id="payAmount" placeholder="0.00" min="0"
+                                    step="0.01">
+                                <span class="currency-suffix" id="payCurrency">SOL</span>
+                            </div>
+                        </div>
+
+                        <div class="input-group">
+                            <label class="input-label">You Receive:</label>
+                            <div class="input-container">
+                                <input type="text" class="input-field" id="tokensReceived" placeholder="0.00" readonly>
+                                <span class="currency-suffix">LYNX</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="buy-button" id="buyButton">
+                        <span class="wallet-icon">👛</span>
+                        <span class="button-text">Connect Wallet</span>
+                    </button>
+
+                    <div class="warning">
+                        ⚠ DO NOT SEND SOL FROM CEX EXCHANGE
+                    </div> -->
+
+                </div>
+            <!-- <div class="homeimg"><img src="images/roadmap.jpg"></div> -->
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="section">
+        <div class="container about-container">
+            <h2 class="section-title">🌌 The Legend of LynxCoin</h2>
+            <div class="lore-content">
+                <p style="margin-bottom: 25px;">From the heart of the Mystic Mountains, the legendary explorer Lynx sets
+                    off on an epic journey to uncover The Lost Crypto Treasure.</p>
+                <p style="margin-bottom: 25px;">Each step of his climb unlocks wealth and opportunity for his loyal
+                    followers – known as the <strong style="color: #F4B942;">Treasure Seekers</strong>.</p>
+                <p style="margin-bottom: 25px;">Together, they ascend the blockchain's highest peaks in search of
+                    prosperity, guided by one belief:</p>
+                <p style="font-size: 24px; color: #3EC1D3; font-weight: bold;">"Climb for Treasure, Hold for Glory."</p>
+            </div>
+
+            <div class="features">
+                <div class="feature-card">
+                    <h3>✅ 0% Tax</h3>
+                    <p>No buy or sell fees. Pure adventure ahead.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>🔥 Community Driven</h3>
+                    <p>Built by Treasure Seekers, for Treasure Seekers.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>💎 Epic Journey</h3>
+                    <p>Every holder climbs the mountain together.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="tokenomics" class="section">
+        <div class="container">
+            <h2 class="section-title">💰 Tokenomics</h2>
+            <div class="tokenomics-grid">
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">🪙</div>
+                    <h3>Total Supply</h3>
+                    <p>1,000,000,000 LYNX<br>Fixed supply, no inflation</p>
+                </div>
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">✅</div>
+                    <h3>0% Tax</h3>
+                    <p>No buy or sell fees<br>Trade freely without friction</p>
+                </div>
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">💧</div>
+                    <h3>Liquidity Locked</h3>
+                    <p>LP tokens secured<br>Safe for all Treasure Seekers</p>
+                </div>
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">🎯</div>
+                    <h3>Fair Distribution</h3>
+                    <p>Community-focused allocation<br>No hidden team reserves</p>
+                </div>
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">🔥</div>
+                    <h3>Meme Allocation</h3>
+                    <p>Every token exists to fuel the climb<br>inspire content, and reward creativity</p>
+                </div>
+                <div class="tokenomics-card">
+                    <div class="tokenomics-icon">📈</div>
+                    <h3>Marketing & Growth</h3>
+                    <p>Strategic reserve for expansion<br>Building lasting value</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="howto" class="section">
+        <div class="container howto-container">
+            <div class="howto-img">
+                <img src="./images/howto.jpg" alt="">
+            </div>
+            <div class="slider-container">
+                <h2 class="section-title">📖 How To Buy LYNX</h2>
+                <div class="slider-wrapper" id="howtoSlider">
+                    <div class="slide">
+                        <div class="howto-card">
+                            <h3><span class="howto-step-number">1</span> Get a Solana Wallet</h3>
+                            <p>Download a Solana-compatible wallet like <strong>Phantom</strong> or
+                                <strong>Solflare</strong>. These are available as browser extensions or mobile apps.
+                            </p>
+                            <p>Create your wallet and <strong>securely save your seed phrase</strong>. Never share this
+                                with anyone!</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="howto-card">
+                            <h3><span class="howto-step-number">2</span> Buy SOL</h3>
+                            <p>Purchase SOL from a centralized exchange like <strong>Binance</strong>,
+                                <strong>Coinbase</strong>, or <strong>Kraken</strong>.
+                            </p>
+                            <p><strong>Important:</strong> Send SOL from your exchange to your wallet (Phantom or Solflare) first. Then buy $LYNX on Pump.fun.</p>
+                        </div>
+                    </div>
+                    <!-- <div class="slide">
+                        <div class="howto-card">
+                            <h3><span class="howto-step-number">3</span> Send SOL to Presale</h3>
+                            <p>
+                                Use the presale widget above or manually send SOL from your personal wallet
+                                to the presale contract address:
+                            </p>
+
+                            <div class="wallet-copy-container">
+                                <code class="wallet-address" id="walletAddress">
+      FD95zJz6dxKd4X2e4gSGqWHqeo8g1SYQfGHEH3hQaTrp
+    </code>
+
+                                <button class="copy-btn" id="copyButton">Copy</button>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="slide">
+                        <div class="howto-card">
+                            <h3><span class="howto-step-number">3</span> Receive LYNX Tokens</h3>
+                           <p>After buying through Pump.fun, you'll automatically receive your <strong>$LYNX tokens</strong> in your wallet.</p>
+<p>Add $LYNX to your wallet to see your balance. Join our Telegram for updates.</p>
+
+                            <!-- <p style="margin-top: 15px; color: #ff6b6b; font-weight: bold;">⚠️ Remember: NEVER send SOL
+                                directly from CEX exchanges!</p> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="howtoPrev">‹</button>
+                    <div class="slider-dots" id="howtoDots"></div>
+                    <button class="slider-btn" id="howtoNext">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="roadmap" class="section">
+        <div class="container roadmap-container">
+            <div class="roadmap-img">
+                <img src="./images/roadmap.jpg" alt="">
+            </div>
+            <div class="slider-container">
+                <h2 class="section-title">🧭 The Climb to Prosperity</h2>
+                <div class="slider-wrapper" id="roadmapSlider">
+                    <div class="slide">
+                        <div class="roadmap-card">
+                            <h3>Phase 1 – The Ascent Begins</h3>
+                            <ul>
+                                <li>LynxCoin Launch 🚀</li>
+                                <li>Community recruitment – Treasure Seekers unite</li>
+                                <li>Official website + social rollouts</li>
+                                <li>Launch of viral slogan campaign: #ClimbForTreasure #HoldForGlory</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="roadmap-card">
+                            <h3>Phase 2 – The First Summit</h3>
+                            <ul>
+                                <li>LynxCoin Launch on Pump.fun 🚀 (upcoming)</li>
+                                <li>Marketing partnerships with top meme pages and explorers</li>
+                                <li>NFT teaser: Lynx Expedition Collection</li>
+                                <li>Community growth initiatives and giveaways</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="roadmap-card">
+                            <h3>Phase 3 – The Hidden Cavern</h3>
+                            <ul>
+                                <li>NFT mint launch + Treasure Hunt airdrops</li>
+                                <li>Community challenges to unlock "hidden rewards"</li>
+                                <li>First major CEX listing target</li>
+                                <li>Strategic partnerships with crypto influencers</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="roadmap-card">
+                            <h3>Phase 4 – The Summit of Glory</h3>
+                            <ul>
+                                <li>Global campaign: The Treasure is Found</li>
+                                <li>Full community reward vault revealed</li>
+                                <li>Animated lore short + merchandise line</li>
+                                <li>Expansion into new blockchain adventures</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <button class="slider-btn" id="roadmapPrev">‹</button>
+                    <div class="slider-dots" id="roadmapDots"></div>
+                    <button class="slider-btn" id="roadmapNext">›</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="section">
+        <div class="container">
+            <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What is LynxCoin?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        LynxCoin is a community-driven meme token on Solana inspired by the legendary explorer Lynx and
+                        his quest to discover the Lost Crypto Treasure. We're building a vibrant community of Treasure
+                        Seekers who believe in climbing together toward prosperity with 0% tax and pure adventure.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>How to get $LYNX?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Have SOL in your wallet to swap for $LYNX. You can buy SOL directly through your wallet,
+                        transfer SOL from another wallet, or buy SOL on an exchange and send it to your wallet.
+                        Make sure you’re using a Solana-compatible wallet like Phantom or Solflare. 
+                        Never send SOL directly from a centralized exchange (CEX) when swapping for $LYNX.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Why can't I send SOL from a CEX?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        Centralized exchanges use pooled wallet addresses, which means your individual transaction may not 
+                        be properly recognized when swapping for tokens. Always use your own personal wallet, where you 
+                        control the private keys, to ensure you receive your LynxCoin ($LYNX) safely.
+            
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What are the tokenomics?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        LynxCoin features 0% buy and sell tax, meaning no fees on transactions. Total supply is 1
+                        billion LYNX tokens with fair distribution focused on the community. Check our Tokenomics
+                        section above for detailed allocation breakdown.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>When will LynxCoin launch on Pump.fun?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        LynxCoin will launch on Pump.fun soon! The exact date will be announced
+                        to our Telegram community. 
+                        Join our Telegram to stay updated on the First Summit (Phase 2) launch!
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>What makes LynxCoin different?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        LynxCoin combines an epic adventure narrative with genuine community building. Our mystical
+                        mountain climbing theme, the Treasure Seekers community, NFT collections, and gamified roadmap
+                        create an immersive experience. Plus, with 0% tax and a focus on transparency, we're building
+                        trust as we climb.
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <span>Is LynxCoin safe?</span>
+                        <span class="faq-icon">▼</span>
+                    </div>
+                    <div class="faq-answer">
+                        As with all crypto investments, please do your own research. Our contract will be verified,
+                        liquidity will be locked, and we're building with full transparency. Join our Telegram community
+                        to stay informed about audits, contract details, and security measures.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="community" class="sections">
+        <div class="container">
+            <div class="community">
+                <h2 class="section-title">Meet the Treasure Seekers</h2>
+                <div class="community-emoji">
+                    <img src="./images/main-logo.png" alt="">
+                </div>
+                <p style="font-size: 20px; margin-bottom: 20px;">Join a community of brave explorers climbing together
+                    toward prosperity.</p>
+                <p class="motto">"Those who dare to climb, rise together."</p>
+                <div style="margin-top: 30px; font-size: 28px; font-weight: bold; color: #F4B942;">
+                    #ClimbForTreasure #HoldForGlory
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="constellation-logo">
+            <img src="./images/main-logo.png" alt="">
+        </div>
+        <p style="font-size: 18px; color: #F4B942;">Climb for Treasure, Hold for Glory</p>
+        <p style="margin-top: 20px; opacity: 0.7;">© 2025 LynxCoin. All rights reserved.</p>
+    </footer>
+
+    <!-- Modals -->
+    <div id="loadingModal" class="modal">
+        <div class="modal-content modal-loading">
+            <div class="loading-spinner"></div>
+            <h3>Processing Transaction...</h3>
+            <p>Please confirm the transaction in your wallet</p>
+        </div>
+    </div>
+
+    <div id="successModal" class="modal">
+        <div class="modal-content modal-success">
+            <div class="success-icon">✓</div>
+            <h3>Transaction Successful!</h3>
+            <p id="successMessage">Your LYNX tokens will be airdropped to your wallet after presale ends.</p>
+            <p class="tx-link">Transaction: <a id="txLink" href="#" target="_blank">View on Solscan</a></p>
+            <button class="modal-btn" onclick="closeModal('successModal')">Close</button>
+        </div>
+    </div>
+
+    <div id="errorModal" class="modal">
+        <div class="modal-content modal-error">
+            <div class="error-icon">✕</div>
+            <h3>Transaction Failed</h3>
+            <p id="errorMessage">Something went wrong. Please try again.</p>
+            <button class="modal-btn" onclick="closeModal('errorModal')">Close</button>
+        </div>
+    </div>
+
+    <!-- Include Solana Web3.js from CDN -->
+    <script src="https://unpkg.com/@solana/web3.js@latest/lib/index.iife.min.js"></script>
+    <script type="module" src="script.js"></script>
+    <script>
+        const copyBtn = document.getElementById("copyButton");
+        const walletAddress = document.getElementById("walletAddress").innerText.trim();
+
+        copyBtn.addEventListener("click", async () => {
+            try {
+                await navigator.clipboard.writeText(walletAddress);
+                copyBtn.innerText = "Copied!";
+                setTimeout(() => (copyBtn.innerText = "Copy"), 1500);
+            } catch (err) {
+                console.error("Failed to copy: ", err);
+            }
+        });
+    </script>
+</body>
+
+</html>
